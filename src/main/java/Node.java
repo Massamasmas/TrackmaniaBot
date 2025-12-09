@@ -25,11 +25,22 @@ public class Node
         int decimalPlaces = 5; //how many decimals are stored after 0
         double multiplier = Math.pow(10, decimalPlaces);
         double outRandom = Math.round(Math.random() * multiplier) / multiplier;
+        return(outRandom);
+    }
 
+    public static double generateWeight(int decimalPlaces)
+    {
+        double multiplier = Math.pow(10, decimalPlaces);
+        double outRandom = Math.round(Math.random() * multiplier) / multiplier;
         return(outRandom);
     }
 
     public void modWeight(double d)
+    {
+        weight += d;
+    }
+
+    public void modWeight(int d)
     {
         weight += d;
     }

@@ -1,0 +1,26 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch MainTest",
+      "request": "launch",
+      "mainClass": "MainTest",
+      "cwd": "${workspaceFolder}",
+      "classPaths": [
+        "${workspaceFolder}/target/test-classes"
+      ]
+      
+    },
+    {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "cwd": "${workspaceFolder}",
+      "classPaths": [
+        "${workspaceFolder}/target/classes"
+      ]
+    }
+  ]
+}
